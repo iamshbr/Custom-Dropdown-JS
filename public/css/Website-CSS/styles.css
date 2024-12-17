@@ -1,0 +1,161 @@
+:root {
+  --bs-nsblack: #43425d;
+  --bs-nsBlue: #0e53a8;
+  --bs-nsDanger: #c72d2d;
+  --bs-nsBlue-hover: #e5f1ff;
+  --bs-nsBlue-hover2: #407dc8;
+  --bs-gray-xd: #d6d6d6;
+  --bs-gray-xd2: #888888;
+  --bs-light-blue-xd: #f9fafb;
+  --bs-white: #fff;
+  --bs-gray-xd3: #c1c8d8;
+  --bs-gray-xd4: #eaeaea;
+  --bs-border-gray: #e6e6e6;
+  --font_size15: 15px;
+  --font_size18: 18px;
+  --font_size16: 16px;
+  --font_size14: 14px;
+  --font-size24: 24px;
+}
+
+body {
+  color: #43425d;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+.code {
+  font-family: "Courier New", Courier, monospace;
+  color: #333;
+}
+
+.description {
+  position: relative;
+}
+
+/* Code Container Styling */
+.code-container {
+  margin-top: 10px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+pre {
+  margin: 0;
+  overflow-x: auto;
+  padding: 10px;
+  background-color: #2d2d2d;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #222;
+  color: #f1f1f1;
+  text-align: center;
+  padding: 15px 0;
+  font-family: Arial, sans-serif;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.footer .social-links a {
+  color: #f1f1f1;
+  font-size: 20px;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer .social-links a:hover {
+  color: #0077b5; /* LinkedIn Blue */
+}
+
+.footer .social-links a:nth-child(1):hover {
+  color: #333; /* GitHub Black */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+.navbar {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.navbar-brand {
+  color: #fff !important;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.jumbotron {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+.feature-section {
+  padding: 3rem 1rem;
+}
+
+.feature-card {
+  transition: all 0.3s ease-in-out;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.footer {
+  background-color: #343a40;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.feature-icon {
+  font-size: 2rem;
+  color: #007bff;
+}

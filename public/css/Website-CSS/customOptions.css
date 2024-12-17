@@ -1,0 +1,50 @@
+/* Container holding site details and checkbox */
+.siteItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* Site details container on the left */
+.site_details {
+  display: flex;
+  align-items: center; /* Align siteColorBox and text vertically */
+  gap: 8px; /* Space between color box and text */
+}
+
+/* Small color box */
+.siteColorBox {
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
+  display: inline-block;
+  background-color: red;
+}
+
+/* Site name text */
+.item-site-name {
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+  white-space: nowrap; /* Prevent text from breaking into multiple lines */
+}
+
+/* Checkbox */
+input[type="checkbox"] {
+  margin-left: 10px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  accent-color: #007bff; /* Checkbox highlight color */
+}
+
+input[type="checkbox"] {
+  accent-color: var(--bs-nsBlue);
+}
+
+.allSelectionOption input[type="checkbox"] {
+  margin-left: auto;
+}

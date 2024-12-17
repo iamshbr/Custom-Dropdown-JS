@@ -1,0 +1,334 @@
+.custom-select .custom-options {
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, visibility 0.8s, transform 0.5s ease;
+  transform: translateY(-10%);
+}
+
+.custom-select .custom-options.show-options {
+  height: initial !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: translateY(0) !important;
+}
+
+.custom-dropdown-style {
+  position: absolute;
+  border-radius: 4px;
+  background-color: #fff;
+  z-index: 99;
+  margin: 0;
+  overflow: hidden;
+  top: 40px;
+}
+
+.custom-dropdown-style li {
+  list-style: none;
+}
+
+.dropdown-item {
+  justify-content: space-between;
+}
+
+ul.listOptions {
+  padding: 0;
+  margin: 0;
+}
+
+/* Custom Styles*/
+/* Default Styles for Custom Dropdown */
+
+/* Main Dropdown Container */
+.custom-select {
+  position: relative;
+  width: 100%; /* Adjust width as needed */
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+}
+
+/* Dropdown Trigger Button */
+
+/* Selected Items Section */
+.selected-items-options {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.selected-item {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+  padding: 5px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #333;
+}
+
+/* Dropdown Menu */
+.dropdown_custom_menu {
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  max-height: 250px;
+  overflow-y: auto;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.custom-select.open .dropdown_custom_menu {
+  display: block;
+}
+
+/* Search Box */
+.searchSelectBox {
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.searchInputBox:focus {
+  border-color: #666;
+}
+
+/* No Results Message */
+.noResultError {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+/* All Selection Option */
+.allSelectionOption {
+  padding: 8px 10px;
+  border-bottom: 1px solid #eee;
+  font-size: 0.8rem;
+}
+
+.allSelectionOption a {
+  display: flex;
+  align-items: center;
+  color: #333;
+  text-decoration: none;
+}
+
+/* Dropdown List Items */
+.listOptions {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-items {
+  padding: 8px 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-items:hover {
+  background-color: #f9f9f9;
+}
+
+.site_details {
+  display: flex;
+  align-items: center;
+}
+
+.item-site-name {
+  margin-left: 8px;
+  color: #333;
+}
+
+.dropdown-items input[type="checkbox"] {
+  cursor: pointer;
+}
+
+/* Custom Dropdown Styling */
+
+/* Dropdown Trigger - Active State */
+.custom-select-trigger.active {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.4);
+}
+
+.custom-select-trigger {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5px 6px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+.custom-select-trigger::after {
+  content: "";
+  position: absolute;
+  right: 10px; /* Adjust position */
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #555;
+  border-bottom: 2px solid #555;
+  transition: transform 0.3s ease;
+}
+
+/* Up Arrow on Active State */
+.custom-select-trigger.active::after {
+  transform: translateY(-50%) rotate(-135deg);
+}
+
+/* Styling for Hover State */
+.custom-select-trigger:hover {
+  border-color: #007bff;
+}
+
+/* Dropdown Menu Hidden State */
+.dropdown_custom_menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  max-height: 250px;
+  overflow-y: auto;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+}
+
+/* Dropdown Menu - Open State */
+.dropdown_custom_menu.show-options {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animation for the Trigger Button when Dropdown Opens */
+.custom-select-trigger.active {
+  transition: all 0.3s ease;
+  background-color: #f0f8ff; /* Light Blue Shade */
+}
+
+/* Smooth Hover for Dropdown Items */
+.dropdown-items {
+  padding: 8px 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.2s ease;
+  font-size: 0.8rem;
+}
+
+.dropdown-items:hover {
+  background-color: #f9f9f9;
+}
+
+.custom-options .activeSelectedOption {
+  background-color: #e0f7fa;
+}
+
+.selected-item.bg-gray {
+  background-color: #f0f0f0;
+}
+
+/* Deselect (cross) button styling */
+.deselectOption {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  margin-left: 8px; /* Add spacing between text and cross */
+  border-radius: 50%; /* Circular button */
+  color: #333; /* Cross color */
+  font-weight: bold;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out; /* Smooth hover effect */
+  position: relative;
+}
+
+/* Add the '×' symbol */
+.deselectOption::before {
+  content: "\00d7"; /* Unicode for '×' */
+  position: absolute;
+  font-size: 10px;
+  color: #555; /* Slightly dark gray */
+}
+
+/* Hover Effect */
+.deselectOption:hover {
+  color: #928f8f; /* White cross on hover */
+  transform: scale(1.1); /* Slightly enlarge */
+}
+
+.deselectOption:hover::before {
+  color: #928f8f; /* White cross */
+}
+
+.paddingOneRem {
+  padding: 1rem !important;
+}
+
+/* Search Box */
+.searchSelectBox {
+  position: relative;
+  padding: 8px 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.searchInputBox {
+  width: 100%;
+  padding: 6px 28px 6px 8px; /* Right padding for the clear button */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.searchInputBox:focus {
+  border-color: #007bff;
+}
+
+/* Clear Button Inside Search Input */
+.clearButton {
+  position: absolute;
+  right: 18px; /* Adjust spacing from the edge */
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: #888;
+  font-size: 25px;
+  cursor: pointer;
+  line-height: 1;
+  outline: none;
+  display: none; /* Hidden initially */
+}
+
+.clearButton:hover {
+  color: #007bff;
+}
