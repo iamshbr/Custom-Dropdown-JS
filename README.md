@@ -1,6 +1,8 @@
 # Custom Dropdown Library ![Custom Dropdown](./public/icons/dropdown-menu.png)
 
-A **lightweight**, **flexible**, and **feature-rich** dropdown library for modern web applications. Enhance your UI with customizable, fast, and user-friendly dropdown menus! 🎉
+A **lightweight**, **flexible**, and **feature-rich** dropdown library for
+modern web applications. Enhance your UI with customizable, fast, and
+user-friendly dropdown menus! 🎉
 
 ---
 
@@ -9,9 +11,11 @@ A **lightweight**, **flexible**, and **feature-rich** dropdown library for moder
 ### 🔑 Key Features:
 
 - ✅ **Multiple Selection:** Seamless multi-item selection for better UX.
-- 🔍 **Searchable Options:** Filter dropdown options efficiently with built-in search.
+- 🔍 **Searchable Options:** Filter dropdown options efficiently with built-in
+  search.
 - 🗂️ **Select All Option:** Improve bulk selection with a simple toggle.
-- 🎨 **Customizable Templates:** Tailor option and result templates to your needs.
+- 🎨 **Customizable Templates:** Tailor option and result templates to your
+  needs.
 - ⚙️ **Highly Configurable:** Flexible settings for toggling features.
 - ⚡ **Lightweight & Fast:** Optimized for smooth performance.
 
@@ -54,12 +58,15 @@ const dropdown = useCustomDropdown("#custom-dropdown", {
 
 ## Contributions
 
-We welcome contributions to enhance the functionality, features, and documentation of this project. If you'd like to contribute, please follow these guidelines:
+We welcome contributions to enhance the functionality, features, and
+documentation of this project. If you'd like to contribute, please follow these
+guidelines:
 
 ### How to Contribute
 
 1. **Fork the repository**  
-   Create a copy of this repository under your own GitHub account by clicking the **Fork** button in the top right corner.
+   Create a copy of this repository under your own GitHub account by clicking
+   the **Fork** button in the top right corner.
 
 2. **Clone your fork**  
    Clone the forked repository to your local machine:
@@ -76,23 +83,25 @@ We welcome contributions to enhance the functionality, features, and documentati
    ```
 
 4. **Make your changes**  
-   Make the necessary modifications to the code, fix bugs, or add new features. Please ensure that your changes adhere to the existing code style.
+   Make the necessary modifications to the code, fix bugs, or add new features.
+   Please ensure that your changes adhere to the existing code style.
 
-5. **Commit your changes**
-   Once you're satisfied with your changes, commit them with a descriptive message:
+5. **Commit your changes** Once you're satisfied with your changes, commit them
+   with a descriptive message:
 
    ```bash
    git commit -m 'commit-message'
    ```
 
-6. **Push to your fork**
-   Push your changes to your GitHub repository:
+6. **Push to your fork** Push your changes to your GitHub repository:
 
    ```bash
    git push origin feature-branch
    ```
 
-7. **Create a pull request**
-   Open a pull request to the main repository, describing the changes you've made. Be sure to include relevant details about the changes and why they're needed.
+7. **Create a pull request** Open a pull request to the main repository,
+   describing the changes you've made. Be sure to include relevant details about
+   the changes and why they're needed.
 
-We appreciate your contributions and look forward to collaborating with the community!
+We appreciate your contributions and look forward to collaborating with the
+community!
