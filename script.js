@@ -1,21 +1,35 @@
-import useCustomDropdown from "./Custom-Dropdown/main.js"
+import useCustomDropdown from "./Custom-Dropdown/main.js";
 
 //Sites
 
 const options = [
-  { label: "Northstar Club 1", value: 1, params: { siteName: "Northstar Club 1", siteColor: "red", siteId: 1 } },
-  { label: "Boat Rentals", value: 2, params: { siteName: "Boat Rentals", siteColor: "orange", siteId: 2 } },
-  { label: "Northstar Club 3", value: 3, params: { siteName: "Northstar Club 3", siteColor: "lime", siteId: 3 } },
-  { label: "Northstar Club 4", value: 4, params: { siteName: "Northstar Club 4", siteColor: "blue", siteId: 4 } },
-]
-
+  {
+    label: "Berlin",
+    value: 1,
+    params: { color: "red" },
+  },
+  {
+    label: "Koblenz",
+    value: 2,
+    params: { color: "orange" },
+  },
+  {
+    label: "Munich",
+    value: 3,
+    params: { color: "lime" },
+  },
+  {
+    label: "Frankfurt",
+    value: 4,
+    params: { color: "blue" },
+  },
+];
 
 // const selectDropdown = document.querySelector(".SearchSiteDropdown");
 // options.forEach((option) => {
 //   const HTML = `<option value="${option.siteId}">${option.siteName}</option>`
 //   selectDropdown.innerHTML += HTML;
 // })
-
 
 // const siteSelect = useCustomDropdown("#custom-dropdown-one", {
 //   formatResult: function ({ label, value, params }) {
@@ -58,53 +72,53 @@ const options = [
 //   search: true,
 // });
 
-
 const dropdownOne = useCustomDropdown("#custom-dropdown-one", {
-  change: function (selectedOptions) {
-  }, options,
+  change: function (selectedOptions) {},
+  options,
 });
 
 const dropdownTwo = useCustomDropdown("#custom-dropdown-two", {
-  options, multiple: true,
+  options,
+  multiple: true,
 });
 
 const dropdownThree = useCustomDropdown("#custom-dropdown-three", {
-  options, multiple: true, search: true
+  options,
+  multiple: true,
+  search: true,
 });
 
 const dropdownFour = useCustomDropdown("#custom-dropdown-four", {
-  options, multiple: true, search: true,
+  options,
+  multiple: true,
+  search: true,
   formatResult: function ({ label, value, params }) {
-    return (`
+    return `
           <div class="siteItem">
               <span class="site_details">
-                <span class="siteColorBox" style="background-color: ${params.siteColor}"></span>
-                <span class="item-site-name">${params.siteName}</span>
+                <span class="siteColorBox" style="background-color: ${params.color}"></span>
+                <span class="item-site-name">${label}</span>
               </span>
             </div>
-          `)
+          `;
   },
   formatOption: function ({ label, value, params }) {
-    return (`
+    return `
             <div class="siteItem">
               <span class="site_details">
-                <span class="siteColorBox" style="background-color: ${params.siteColor}"></span>
-                <span class="item-site-name">${params.siteName}</span>
+                <span class="siteColorBox" style="background-color: ${
+                  params.color
+                }"></span>
+                <span class="item-site-name">${label}</span>
               </span>
               <input type="checkbox" ${params.selected && "checked"} />
             </div>
-       `)
+       `;
   },
 });
 
-
 const dropdownFive = useCustomDropdown("#custom-dropdown-five", {
-  options, multiple: true, selectionAll: true,
+  options,
+  multiple: true,
+  selectionAll: true,
 });
-
-
-
-
-
-
-
